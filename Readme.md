@@ -1,6 +1,7 @@
 ﻿# Личный проект «Седона»
 
 * Студент: [Марина Чиркова](https://up.htmlacademy.ru/htmlcss/13/user/181484).
+* Наставник: [Гоша Егорян] (https://up.htmlacademy.ru/htmlcss/13/user/85633).
 
 ---
 
