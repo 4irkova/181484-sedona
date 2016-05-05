@@ -19,3 +19,179 @@ h2{
   line-height: 26px;
   color: #000000;
 }
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+.main-header {
+  outline: 2px solid blue;
+}
+.container {
+  width: 1200px;
+  padding: 0;
+  margin: 0 auto;
+}
+.navigation {
+  outline: 2px solid blue;
+}
+.nav-menu {
+  float: left;
+  width: auto;
+}
+li {
+  display: inline-block;
+  outline: 2px solid blue;
+  padding-right: 140px;
+}
+.logo {
+  display: inline;
+}
+.text-header {
+  text-align: center;
+  outline: 2px solid blue;
+}
+.content-blue {
+  width: 400px;
+  min-height: 255px;
+  display: inline-block;
+  padding: 0;
+  outline: 2px solid green;
+  background-color: #81b3d2;
+  vertical-align: top;
+}
+.content {
+  vertical-align: top;
+  min-height: 255px;
+  text-align: center;
+  width: 395px;
+  outline: 2px solid red;
+  display: inline-block;
+  padding: 0;
+}
+.categories {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  outline: 2px solid green;
+}
+.about-categories {
+  outline: 2px solid green;
+  float: left;
+  text-align: center;
+  margin-right: 60px;
+}
+.about-categories:last-child {
+  margin-right: 0;
+}
+.content-two {
+  vertical-align: top;
+  min-height: 256px;
+  text-align: center;
+  margin-bottom: 60px;
+  width: 395px;
+}
+.content-line {
+  vertical-align: top;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  width: 300px;
+  margin-right: 130px;
+  margin-bottom: 60px;
+}
+.content-line:last-child {
+  margin-right: 0;
+}
+.search {
+  outline: 2px solid grey;
+  text-align: center;
+}
+.search-btn {
+  outline: 2px solid grey;
+  display: block;
+  width: 570px;
+  min-height: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.findings {
+  outline: 2px solid purple;
+  width: 570px;
+  min-height: 395px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.map {
+    background: url("img/sedona-index-map.jpg") no-repeat 0;
+}
+.form-filter {
+  outline: 2px solid grey;
+  display: block;
+  width: 570px;
+  min-height: 393px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.data {
+  display: block;
+  padding: 0;
+  width: 345px;
+}
+.main-options {
+  display: block;
+  outline: 2px solid green;
+}
+.infrastructure {
+  float: left;
+  outline: 2px solid purple;
+}
+.house {
+  float: left;
+  outline: 2px solid purple;
+}
+.price-filter {
+  float: right;
+  outline: 2px solid purple;
+}
+.find-text {
+  display: block;
+  outline: 2px solid green;
+}
+.hotels {
+  display: block;
+  outline: 2px solid green;
+}
+.hotel {
+  outline: 2px solid grey;
+  min-height: 150px;
+}
+.img {
+  float: left;
+}
+.more-btn, .book-btn {
+  float: left;
+}
+.rating {
+  float: right;
+}
+.main-footer {
+  min-height: 120px;
+  background-color: white;
+  opacity: 0.8;
+}
+.footer-tag {
+  float: left;
+}
+.footer-social {
+  width: 180px;
+  margin-left: 500px;
+  outline: 2px solid purple;
+  float: left;
+}
+.footer-copyright {
+  min-width: 150px;
+  vertical-align: top;
+  float: right;
+}
