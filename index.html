@@ -8,23 +8,23 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <nav class="navigation">
+        <nav class="navigation  clearfix">
           <div class="logo">
             <a href="#"><img src="img/sedona-logo-top-menu.png" width="138" height="70"></a>
-          </div>
-          <ul>
+          </div
+          ><ul class="nav-menu">
             <li>
               <a href="#">Информация</a>
-            </li>
-            <li>
+            </li
+            ><li>
               <a href="#">Фото и видео</a>
-            </li>
-            <li>
-            </li>
-            <li>
+            </li
+            ><li>
+            </li
+            ><li>
               <a href="#">Карта штата</a>
-            </li>
-            <li>
+            </li
+            ><li>
               <a href="#">Гостиницы</a>
             </li>
           </ul>
@@ -33,21 +33,21 @@
           <img src="img/sedona-index-welcome.jpg" width="1200" height="508">
         </div>
         <div class="text-header">
-          <h2>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
+          <h2 class="sedona-text-header">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
       </div>
     </header>
     <main class="container">
       <section class="about-city">
-        <div class="content">
+        <div class="content-blue">
           <h2>Настоящий городок</h2>
           <p>— №1 —</p>
           <p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-        </div>
-        <img src="img/sedona-index-№1.jpg" width="800" height="256">
+        </div
+        ><img src="img/sedona-index-№1.jpg" width="800" height="256">
       </section>
-      <section class="categories">
+      <section class="categories clearfix">
         <div class="about-categories">
           <img src="img/sedona-index-icon-house.jpg" width="75" height="72">
           <h2>Жилье</h2>
@@ -65,29 +65,31 @@
         </div>
       </section>
       <section class="about-city">
-        <img src="img/sedona-index-№2.jpg" width="800" height="256">
-        <div class="content">
+        <img class="sedona-№2" src="img/sedona-index-№2.jpg" width="800" height="256">
+        <div class="content-blue">
           <h2>ТАМ ЕСТЬ Мост дьявола</h2>
           <p>— №2 —</p>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </div>
+        </div
+        ></section>
+      <section class="three-columns-city">
         <div class="content">
           <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
           <p>— №3 —</p>
           <p>ВСЕ достопримечательности находятся очень близко</p>
-        </div>
-        <div class="content">
+        </div
+        ><div class="content">
           <h2>КРАСИВАЯ ДОРОГА</h2>
           <p>— №4 —</p>
           <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
-        </div>
-        <div class="content">
+        </div
+        ><div class="content">
           <h2>МАЛО ТУРИСТОВ</h2>
           <p>— №5 —</p>
           <p>Большинство едет в гранд каньон и толпится там</p>
         </div>
-      </section>
-      <section class="booking">
+      </section
+      ><section class="booking">
         <div class="search">
           <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
@@ -98,16 +100,24 @@
         <div class="findings">
           <form action="#" method="get">
             <label>
-              Дата заезда:<input type="text" name="24 апреля 2016">
+              Дата заезда:<input class="form-data" type="text" name="data" value="24 апреля 2016">
+              <span class="icon-calendar"></span>
             </label>
             <label>
-              Дата выезда:<input type="text" name="4 июля 2016">
+              Дата выезда:<input class="form-data" type="text" name="data" value="4 июля 2016">
+              <span class="icon-calendar"></span>
             </label>
             <label>
-              Взрослые:<input type="text" name="2">
+              Взрослые:
+              <span class="icon-minus"></span>
+              <span class="icon-plus"></span>
+              <input class="form-number" type="text" name="2">
             </label>
             <label>
-              Дети:<input type="text" name="0">
+              Дети:
+              <span class="icon-minus"></span>
+              <span class="icon-plus"></span>
+              <input class="form-number" type="text" name="0">
             </label>
             <input type="submit" value="Найти">
           </form>
@@ -123,12 +133,15 @@
           <a class="tag" href="#">#visitsedona</a>
         </section>
         <section class="footer-social">
-          <a class="social-btn" href="#">Твиттер</a>
-          <a class="social-btn" href="#">Фейсбук</a>
-          <a class="social-btn" href="#">Ютуб</a>
+          <!--Твиттер-->
+          <a class="social-btn" href="#"><span class="icon-twitter"></span></a>
+          <!--Фейсбук-->
+          <a class="social-btn" href="#"><span class="icon-facebook"></span></a>
+          <!--Ютуб-->
+          <a class="social-btn" href="#"><span class="icon-youtube"></span></a>
         </section>
         <section class="footer-copyright">
-          <p>Website by</p>
+          <span>Website by</span>
           <a class="btn" href="https://htmlacademy.ru">
             <img src="img/sedona-hotels-logo-html-academy.png" width="113" height="39">
           </a>
