@@ -5,6 +5,45 @@ body{
   line-height: 21px;
   color: #333333;
 }
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
 h1{
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
@@ -25,6 +64,10 @@ h2{
   display: table;
   clear: both;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .main-header {
   outline: 2px solid blue;
 }
@@ -35,22 +78,46 @@ h2{
 }
 .navigation {
   outline: 2px solid blue;
+  min-height: 56px;
 }
 .nav-menu {
-  float: left;
+  display: block;
   width: auto;
+  padding: 0;
+  margin: 0;
 }
-li {
+.nav-menu li {
   display: inline-block;
   outline: 2px solid blue;
-  padding-right: 140px;
+  width: 240px;
+  text-align: center;
+  line-height: 56px;
+}
+.nav-menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
 }
 .logo {
   display: inline;
+  position: absolute;
+  width: 1200px;
+  text-align: center;
+}
+.top-image {
+  margin-bottom: 55px;
 }
 .text-header {
   text-align: center;
   outline: 2px solid blue;
+  text-transform: uppercase;
+  margin-bottom: 49px;
+}
+.sedona-text-header {
+  max-width: 500px;
+  outline: 2px solid blue;
+  margin: auto;
 }
 .content-blue {
   width: 400px;
@@ -60,6 +127,7 @@ li {
   outline: 2px solid green;
   background-color: #81b3d2;
   vertical-align: top;
+  text-transform: uppercase;
 }
 .content {
   vertical-align: top;
@@ -81,7 +149,7 @@ li {
   text-align: center;
   margin-right: 60px;
 }
-.about-categories:last-child {
+.about-categories:nth-child(3n) {
   margin-right: 0;
 }
 .content-two {
@@ -179,19 +247,36 @@ li {
 .main-footer {
   min-height: 120px;
   background-color: white;
-  opacity: 0.8;
 }
 .footer-tag {
-  float: left;
+  display: inline-block;
+  vertical-align: top;
 }
 .footer-social {
+  display: inline-block;
+  vertical-align: top;
   width: 180px;
-  margin-left: 500px;
   outline: 2px solid purple;
-  float: left;
 }
 .footer-copyright {
   min-width: 150px;
+  display: inline-block;
   vertical-align: top;
-  float: right;
+}
+.social-btn {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 19px;
+  line-height: 48px;
+  text-decoration: none;
+  background-color: #81b3d2;
+  color: white;
+  width: 38px;
+  height: 48px;
+  margin-right: 2px;
+  padding-left: 8px;
+  position: relative;
+}
+.social-btn:first-child {
+  margin-right: 1px;
 }
