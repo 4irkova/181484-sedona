@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Sedona</title>
-    <link href="css\style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <nav class="navigation  clearfix">
           <div class="logo">
-            <a href="#"><img src="img/sedona-logo-top-menu.png" width="138" height="70"></a>
+            <a href="#"><img src="img/sedona-logo-top-menu.png" width="138" height="70" alt="sedona logo"></a>
           </div
           ><ul class="nav-menu">
             <li>
@@ -30,7 +31,7 @@
           </ul>
         </nav>
         <div class="top-image">
-          <img src="img/sedona-index-welcome.jpg" width="1200" height="508">
+          <img src="img/sedona-index-welcome.jpg" width="1200" height="508" alt="sedona welcome">
         </div>
         <div class="text-header">
           <h2 class="sedona-text-header">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
@@ -45,33 +46,35 @@
           <p>— №1 —</p>
           <p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div
-        ><img src="img/sedona-index-№1.jpg" width="800" height="256">
+        ><img src="img/sedona-index-№1.jpg" width="800" height="256" alt="sedona landscape">
       </section>
-      <section class="categories">
+      <section class="categories clearfix">
         <div class="about-categories">
-          <img src="img/sedona-index-icon-house.jpg" width="75" height="72">
+          <img src="img/sedona-index-icon-house.jpg" width="75" height="72" alt="sedona house">
           <h2>Жилье</h2>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="about-categories">
-          <img src="img/sedona-index-icon-eat.jpg" width="74" height="70">
+          <img src="img/sedona-index-icon-eat.jpg" width="74" height="70" alt="sedona eat">
           <h2>Еда</h2>
           <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
         </div>
         <div class="about-categories">
-          <img src="img/sedona-index-icon-souvenir.jpg" width="64" height="75">
+          <img src="img/sedona-index-icon-souvenir.jpg" width="64" height="75" alt="sedona souvenir">
           <h2>Сувениры</h2>
           <p>Не только китайского, но и местного производства!</p>
         </div>
       </section>
       <section class="about-city">
-        <img src="img/sedona-index-№2.jpg" width="795" height="256">
+        <img class="sedona-№2" src="img/sedona-index-№2.jpg" width="800" height="256" alt="landscape">
         <div class="content-blue">
           <h2>ТАМ ЕСТЬ Мост дьявола</h2>
           <p>— №2 —</p>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div
-        ><div class="content">
+        ></section>
+      <section class="three-columns-city">
+        <div class="content">
           <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
           <p>— №3 —</p>
           <p>ВСЕ достопримечательности находятся очень близко</p>
@@ -86,8 +89,8 @@
           <p>— №5 —</p>
           <p>Большинство едет в гранд каньон и толпится там</p>
         </div>
-      </section>
-      <section class="booking">
+      </section
+      ><section class="booking">
         <div class="search">
           <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
@@ -97,23 +100,31 @@
         </div>
         <div class="findings">
           <form action="#" method="get">
-            <label>
-              Дата заезда:<input type="text" name="24 апреля 2016">
+            <label class="field-data">
+              Дата заезда:<input class="form-data" type="text" name="data" value="24 апреля 2016">
+              <span class="icon-calendar"></span>
             </label>
-            <label>
-              Дата выезда:<input type="text" name="4 июля 2016">
+            <label class="field-data">
+              Дата выезда:<input class="form-data" type="text" name="data" value="4 июля 2016">
+              <span class="icon-calendar"></span>
             </label>
-            <label>
-              Взрослые:<input type="text" name="2">
+            <label class="field-number">
+              Взрослые:
+              <span class="icon-minus"></span>
+              <input class="form-number" type="text" value="2" name="number">
+              <span class="icon-plus"></span>
             </label>
-            <label>
-              Дети:<input type="text" name="0">
+            <label  class="field-number">
+              Дети:
+              <span class="icon-minus"></span>
+              <input class="form-number" type="text" value="0" name="number">
+              <span class="icon-plus"></span>
             </label>
-            <input type="submit" value="Найти">
+            <input class="findings-btn" type="submit" value="Найти">
           </form>
         </div>
         <div class="map">
-          <img src="img/sedona-index-map.jpg" width="1200" height="593">
+          <img src="img/sedona-index-map.jpg" width="1200" height="593" alt="sedona map">
         </div>
       </section>
     </main>
@@ -133,7 +144,7 @@
         <section class="footer-copyright">
           <span>Website by</span>
           <a class="btn" href="https://htmlacademy.ru">
-            <img src="img/sedona-hotels-logo-html-academy.png" width="113" height="39">
+            <img src="img/sedona-hotels-logo-html-academy.png" width="113" height="39" alt="html academy logo">
           </a>
         </section>
       </div>
