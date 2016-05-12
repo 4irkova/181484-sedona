@@ -260,7 +260,10 @@ img {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
+<<<<<<< HEAD
   box-shadow: 0 5px 20px -5px;
+=======
+>>>>>>> origin/master
 }
 .map {
     background: url("img/sedona-index-map.jpg") no-repeat 0;
@@ -423,6 +426,7 @@ img {
   left: 352px;
   right: 352px;
   top: 2619px;
+<<<<<<< HEAD
 }
 .main-footer-catalog {
   min-height: 120px;
@@ -430,6 +434,8 @@ img {
   outline: 2px solid purple;
   width: 1200px;
   margin: auto;
+=======
+>>>>>>> origin/master
 }
 .footer-tag {
   display: inline-block;
