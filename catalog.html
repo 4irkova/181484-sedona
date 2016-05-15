@@ -26,7 +26,7 @@
               <a href="#">Карта штата</a>
             </li
             ><li>
-              <a href="#">Гостиницы</a>
+              <a href="#" class="active">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -34,29 +34,40 @@
     </header>
      <main class="container">
       <section class="main-options clearfix">
-      <img src="img/sedona-hotels-background-blur.jpg" width="1200" height="217" alt="blurred background">
         <div class="list infrastructure">
           <h2>Инфраструктура:</h2>
-          <label>
-            <span class="icon-check-on"></span><span>Бассейн</span>
+          <label class="login-checkbox">
+            <input type="checkbox" checked class="checkbox-indicator">
+            <span class="checkbox-icon icon-check-off"></span>
+            <span class="signature">Бассейн</span>
           </label>
-          <label>
-            <span class="icon-check-off"></span><span>Парковка</span>
+          <label class="login-checkbox">
+            <input type="checkbox" class="checkbox-indicator">
+            <span class="checkbox-icon icon-check-off"></span>
+            <span class="signature">Парковка</span>
           </label>
-          <label>
-            <span class="icon-check-off"></span><span>WI-FI</span>
+          <label class="login-checkbox">
+            <input type="checkbox" class="checkbox-indicator">
+            <span class="checkbox-icon icon-check-off"></span>
+            <span class="signature">WI-FI</span>
           </label>
         </div>
-        <div class="list house">
+        <div class="list property-type">
           <h2>Тип жилья:</h2>
-          <label>
-            <span class="icon-check-on"></span><span>Гостиница</span>
+          <label class="login-checkbox">
+            <input type="checkbox" checked class="checkbox-indicator">
+            <span class="checkbox-icon icon-check-off disabled"></span>
+            <span class="signature">Гостиница</span>
           </label>
-          <label>
-            <span class="icon-check-on"></span><span>Мотель</span>
+          <label class="login-checkbox">
+            <input type="checkbox" checked class="checkbox-indicator">
+            <span class="checkbox-icon icon-check-off"></span>
+            <span class="signature">Мотель</span>
           </label>
-          <label>
-            <span class="icon-check-on"></span><span>Апартаменты</span>
+          <label class="login-checkbox">
+            <input type="checkbox" checked class="checkbox-indicator">
+            <span class="checkbox-icon icon-check-off"></span>
+            <span class="signature">Апартаменты</span>
           </label>
         </div>
         <div class="price-filter">
@@ -99,7 +110,7 @@
           ></ul>
         <div class="triangle">
           <span class="icon-up-dir"></span>
-          <span class="icon-down-dir"></span>
+          <span class="icon-down-dir active"></span>
         </div>
       </section>
       <section class="hotels">
@@ -107,9 +118,9 @@
           <div class="amara-img img">
             <img src="img/sedona-hotels-amara.jpg" width="135" height="90" alt="photos of hotel Amara">
           </div>
-          <div class="about-hotel">
+          <a href="#" class="about-hotel">
             <h2>Amara Resort & Spa</h2>
-          </div>
+          </a>
           <div class="more">
             <span>Гостиница</span>
             <div class="more-btn">
@@ -138,9 +149,9 @@
           <div class="desert-img img">
             <img src="img/sedona-hotels-desert.jpg" width="135" height="90" alt="photos of hotel Desert">
           </div>
-          <div class="about-hotel">
+          <a href="#" class="about-hotel">
             <h2>Desert Quail Inn</h2>
-          </div>
+          </a>
           <div class="more">
             <span>Мотель</span>
             <div class="more-btn">
@@ -167,9 +178,9 @@
           <div class="villas-img img">
             <img src="img/sedona-hotels-villas.jpg" width="135" height="90" alt="photos of hotel Villas">
           </div>
-          <div class="about-hotel">
+          <a href="#" class="about-hotel">
             <h2>Villas at Poco Diablo</h2>
-          </div>
+          </a>
           <div class="more">
             <span>Апартаменты</span>
             <div class="more-btn">
@@ -210,9 +221,7 @@
         </section>
         <section class="footer-copyright">
           <span>Website by</span>
-          <a class="btn" href="https://htmlacademy.ru">
-            <img src="img/sedona-hotels-logo-html-academy.png" width="113" height="39" alt="html academy logo">
-          </a>
+          <a class="btn" href="https://htmlacademy.ru"></a>
         </section>
       </div>
     </footer>
