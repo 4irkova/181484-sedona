@@ -118,11 +118,8 @@ img {
   width: 300px;
   text-align: center;
   z-index: 10;
-<<<<<<< HEAD
   left: 38%;
   right: auto;
-=======
->>>>>>> origin/master
 }
 .top-image {
   margin-bottom: 55px;
@@ -412,7 +409,6 @@ img {
   position: absolute;
   top: 20px;
   left: 70px;
-<<<<<<< HEAD
   outline: 2px solid purple;
   margin-right: 115px;
 }
@@ -420,15 +416,6 @@ img {
   display: block;
   margin-bottom: 20px;
   outline: 2px solid purple;
-=======
-  outline: 2px solid purple;
-  margin-right: 115px;
-}
-.list label {
-  display: block;
-  margin-bottom: 20px;
-  outline: 2px solid purple;
->>>>>>> origin/master
   vertical-align: middle;
 }
 .icon-check-on {
@@ -548,13 +535,10 @@ img {
   border-radius: 2px;
   outline: none;
   cursor: pointer;
-<<<<<<< HEAD
 }
 .btn-transparent:hover {
   background-color: #ffffff;
   color: #000000;
-=======
->>>>>>> origin/master
 }
 .find-text {
   display: block;
@@ -592,12 +576,9 @@ img {
   border-bottom: 1px dotted #81b3d2;
   text-decoration: none;
 }
-<<<<<<< HEAD
 .sort a:hover {
   color: #81b3d2;
 }
-=======
->>>>>>> origin/master
 .triangle {
   display: inline-block;
   vertical-align: top;
@@ -606,7 +587,6 @@ img {
 }
 .icon-up-dir {
   outline: 2px solid green;
-<<<<<<< HEAD
   margin-left: -5px;
   color: #cccccc;
 }
@@ -620,11 +600,6 @@ img {
 }
 .icon-up-dir:hover {
   color: #000000;
-=======
-}
-.icon-down-dir {
-  outline: 2px solid green;
->>>>>>> origin/master
 }
 .hotels {
   display: block;
