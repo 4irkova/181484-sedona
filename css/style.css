@@ -142,6 +142,7 @@ img {
 }
 .nav-menu .active {
   color: #766357;
+  padding-left: 25px;
 }
 .nav-menu .active:hover {
   color: #604e43;
@@ -151,21 +152,24 @@ img {
 }
 .nav-menu li {
   display: inline-block;
+  vertical-align: top;
   width: 240px;
   text-align: center;
   line-height: 56px;
   cursor: pointer;
 }
-.nav-menu li a {
+.nav-menu a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   color: #000000;
+  line-height: 26px;
+  font-size: 14px;
 }
-.nav-menu li a:hover {
+.nav-menu a:hover {
   color: #81b3d2;
 }
-.nav-menu li a:active {
+.nav-menu a:active {
   color: #cacaca;
 }
 .logo {
@@ -193,15 +197,15 @@ img {
   margin: auto;
 }
 .content-blue {
-  width: 280px;
+  width: 340px;
   min-height: 140px;
   display: inline-block;
   background-color: #81b3d2;
   vertical-align: top;
   text-transform: uppercase;
   color: #ffffff;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 53px;
   padding-bottom: 28px;
   text-align: center;
@@ -227,10 +231,10 @@ img {
 .about-categories {
   float: left;
   text-align: center;
-  width: 21%;
+  width: 26%;
   text-transform: uppercase;
-  padding-left: 73px;
-  padding-right: 75px;
+  padding-left: 44px;
+  padding-right: 44px;
   position: relative;
 }
 .house {
@@ -295,11 +299,11 @@ img {
   vertical-align: top;
   min-height: 190px;
   text-align: center;
-  width: 240px;
+  width: 280px;
   display: inline-block;
   text-transform: uppercase;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-top: 20px;
   padding-bottom: 38px;
 }
@@ -307,8 +311,8 @@ img {
   margin-top: 27px;
   margin-bottom: 25px;
   width: auto;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
   margin-left: 0;
   margin-right: 0;
   line-height: 21px;
@@ -361,6 +365,18 @@ img {
   font-size: 21px;
   font-weight: bold;
 }
+/* Всплывающая форма */
+@keyframes bounce {
+  0%   {
+    transform: translateY(00px);
+  }
+  30%  {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .findings {
   width: 460px;
   min-height: 285px;
@@ -373,6 +389,11 @@ img {
   font-size: 14px;
   font-weight: bold;
   box-shadow: 0 5px 20px -5px;
+  display: none;
+}
+.findings-show {
+  display: block;
+  animation: bounce 0.5s;
 }
 .map {
     background: url("img/sedona-index-map.jpg") no-repeat 0;
@@ -391,6 +412,7 @@ img {
   font-size: 21px;
   color: #c2c2c2;
   cursor: pointer;
+  padding-left: 15px;
 }
 .icon-calendar:hover {
   color: #000000;
@@ -407,25 +429,26 @@ img {
 .findings .field-data:nth-child(2) {
   margin-bottom: 5px;
 }
-.findings .field-data input {
+.findings .form-data {
+  border: solid 2px #f2f2f2;
   border: solid 2px #f2f2f2;
 }
-.findings .field-data input:hover {
+.findings .form-data:hover {
   background-color: #ebebeb;
   border: solid 2px #ebebeb;
 }
-.findings .field-data input:focus {
+.findings .form-data:focus {
   background-color: #ffffff;
   border: solid 2px #ebebeb;
 }
 .findings .form-data {
-  width: 330px;
+  width: 290px;
   height: 35px;
   background-color: #f2f2f2;
   margin-bottom: 27px;
-  border: none;
   margin-left: 20px;
   padding-left: 15px;
+  padding-right: 40px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
@@ -538,16 +561,16 @@ img {
   cursor: pointer;
   position: relative;
 }
-.list label span {
+.list span {
   vertical-align: middle;
 }
-.checkbox-indicator {
+.login-checkbox input[type="checkbox"] {
   display: none;
 }
 .list input[type="checkbox"] + .icon-check-off {
   position: absolute;
   top: -2px;
-  left: 0;
+  left: -6px;
   width: 17px;
   height: 17px;
 }
@@ -556,9 +579,11 @@ img {
   content: "\2611";
   position: absolute;
 }
+.login-checkbox input[type="checkbox"]:checked + .icon-check-off::before {
+  left: 2px;
+}
 .icon-check-on {
   font-size: 26px;
-  margin-right: 10px;
   cursor: pointer;
 }
 .checkbox-icon:hover {
@@ -566,9 +591,7 @@ img {
 }
 .icon-check-off {
   font-size: 26px;
-  margin-right: 10px;
   cursor: pointer;
-  margin-left: -6px;
 }
 .icon-check-off:hover {
   color: #fefefe;
@@ -630,7 +653,9 @@ img {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 80px;
+  padding-top: 7px;
   padding-left: 65px;
+  line-height: 20px;
 }
 .price-controls input {
   width: 50px;
