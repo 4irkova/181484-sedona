@@ -366,6 +366,17 @@ img {
   font-weight: bold;
 }
 /* Всплывающая форма */
+@-webkit-keyframes bounce {
+  0%   {
+    transform: translateY(00px);
+  }
+  30%  {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @keyframes bounce {
   0%   {
     transform: translateY(00px);
@@ -393,6 +404,7 @@ img {
 }
 .findings-show {
   display: block;
+  -webkit-animation: bounce 0.5s;
   animation: bounce 0.5s;
 }
 .map {
